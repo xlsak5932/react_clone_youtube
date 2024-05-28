@@ -1,0 +1,205 @@
+#main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 51px;
+    background-color: #f0c22e;
+
+    #aside {
+        width: 15%;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #ebc138;
+            
+            
+            button {
+                width: 100%;
+                // width: 190px;
+                display: flex;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #ca9e0e !important;
+                }
+                
+                span {
+                    display: inline-block;
+                    font-size: 18px;
+                    padding: 12px 6px;
+                    box-sizing: border-box;
+
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #contents {
+        width: 100%;
+        h2 {
+            padding-top: 10px;
+            padding-left: 10px;
+        }   
+    }
+
+}
+
+
+// 유튜브 메인 화면
+#contents {
+    .videos__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .video__card {
+            width: 23%;
+            margin: 0.5%;
+
+            h3 {
+                background-color: rgba(114, 88, 4, 0.5);
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+// 영상 클릭시에
+.videoConts {
+    background-color: #ebc138;
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .video__sub {
+        .left {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            .play {}
+            .desc {
+                h3 {
+                    margin-top: 1vw;
+                }
+                .channer {
+                    margin-top: 1vw;
+
+                    a {
+                        color: #000;
+                        font-size: 1.5vw;
+                    }
+                    span {
+                        display: block;
+                        color: #000;
+                        font-size: 1.5vw;
+                        margin-top: 0.3vw;
+                    }
+                }
+            }
+        }
+        .right {
+
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .video__card {
+        width: 31% !important;
+    }
+}
+@media (max-width: 800px) {
+    #main {
+        margin-top: 108px;
+
+        .video__card {
+            width: 49% !important;
+            margin: 1%;
+        }
+    }
+}
+
+
+
+// @media (max-width: 360px){
+//     #main {
+//         #contents {
+//             background-color: #ebc138;
+//         }
+//     }
+// }
+
+// @media (max-width: 304px){
+//     #main {
+//         margin-top: 134px;
+//     }
+// }
+
+// @media (max-width: 650px){
+//     #main {
+//         #aside {
+//             width: 100%;
+
+//             div {
+//                 button {
+//                     span {
+//                         font-size: 16px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     #main {
+//         #contents {
+//             div {
+//                 ul {
+//                     flex-direction: column;
+//                     align-items: center;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     #main {
+//         margin-top: 108px;
+//     }
+// }
+
+// @media (max-width: 930px) {
+//     #main {
+//         #contents {
+//             div {
+//                 ul {
+//                     justify-content: space-evenly;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 1260px) {
+//     #main {
+//         #contents {
+//             div {
+//                 ul {
+//                     justify-content: space-evenly;
+//                 }
+//             }
+//         }
+//     }
+// }
